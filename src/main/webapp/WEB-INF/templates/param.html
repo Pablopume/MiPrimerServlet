@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
 
     <title>Numero</title>
 </head>
 <body>
-<h1 th:text="${respuesta}"></h1>
-<h2 th:text="${intentos}"></h2>
+<h1 th:text="${answer}"></h1>
+<h2 th:text="'Te quedan ' + ${contador} + ' intentos'"></h2>
+
 
 <form action="index.html" method="post">
     <input type="submit" value="Atras">

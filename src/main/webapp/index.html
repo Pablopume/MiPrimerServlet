@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0074d9;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-<p1>Por fin salió</p1>
+<h1>Adivina el número</h1>
+
+<form action="Juego" method="post">
+    <label>Escribe un número<br>
+        <input type="text" pattern="10|[1-9]" name="num">
+
+    </label><br><br>
+    <input type="submit" class="button" value="Probar">
+</form>
 </body>
 </html>
